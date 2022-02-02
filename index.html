@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="C:\Users\User\Downloads\photo.jpg" type="image/jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fly Time</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <span>Fly Time</span>
+    </div>
+    <div id="about">
+        <a href="сайт1.html"title="Fly Time" onclick="slowScore('#main')" style="color:#EFFF00">фотки💛</a>
+        <a href="сайт2.html"title="Fly Time" onclick="slowScore('#main')" style="color:#F75200">видео🧡</a>
+
+    </div>
+</header>
+<div id="top">
+    <h1>Fly</h1>
+    <h3>Time</h3>
+</div>
+
+<div id="main">
+    <div class="intro">
+        <h2>Немного о нашей компании:</h2>
+        <span></span>
+    </div>
+
+    <div class="text">
+        <span>
+            Мы рады приветствовать вас на сайте туристического агентства «Fly Time»! Мы предлагаем нашим клиентам только самые интересные и захватывающие приключенческие туры по всему миру!</p>
+<p>Не волнуйтесь - каждый клиент нашего агентства застрахован по полной программе и жаждет приключений снова и снова!</p>
+        </span>
+    </div>
+</div>
+
+
+<div id="overview2">
+    <h2>Консультаты</h2>
+    <h4>Fly Time</h4>
+    <div class="img">
+        <img src="крыса.jpeg" alt="">
+        <span>Атай Бердибеков</span>
+    </div>
+
+    <div class="img">
+        <img src="беляш.jpeg" alt="">
+        <span>Атай Эрматов</span>
+    </div>
+
+    <div class="img">
+        <img src="алишер.jpeg" alt="">
+        <span>Алишер</span>
+    </div>
+
+    <div class="img">
+        <img src="я.jpeg" alt="">
+        <span>Куаныш</span>
+    </div>
+</div>
+
+</div>
+
+<div id="contacts">
+    <center><h5>ОТЗЫВЫ</h5></center>
+    <form id="form_input">
+        <label for="name">Имя <span>*</span></label><br>
+        <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+        <label for="email">Ваша почта <span>*</span></label><br>
+        <input type="email" placeholder="Введите email" name="email" id="email"><br>
+        <label for="message">Сообщение <span>*</span></label><br>
+        <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+        <div id="mess_send" class="btn">Отправить</div>
+    </form>
+</div>
+
+<div id="faq">
+    <div>
+        <span class="title">Наша почта:</span><br>
+        <p> Fly_Time@gmail.ru
+
+        </p>
+    </div>
+    <div>
+        <span class="title">Instagram</span><br>
+        <span class="heading">@Fly_Time.kg:</span>
+        <span class="heading"></span>
+    </div>
+    <div>
+        <span class="title">WhatsApp:</span><br>
+        <span class="heading">+996563256</span><br>
+        <span class="heading">+996566255</span><br>
+        <span class="heading">+996503251</span><br>
+
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    function slowScroll(id){
+      $('html,body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+
+    </script>
+</body>
+</html>
